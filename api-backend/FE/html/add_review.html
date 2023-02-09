@@ -1,0 +1,33 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport content="width=device-width, initial-scale="1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="add_review.html" defer></script>
+    <title>Noobz</title>
+  </head>
+  <body>
+    <h2>Add an episode to our database</h2>
+    <div>
+        <form>
+            <label for="episodeId">Choose existing Episode: </label><br>
+            <select name="episodeId" id="episodeId">
+                <option value="11235">Darnet Diaries - 5 - Beirut Bank Heist</option>>
+            </select><br><br>
+            <label for="reviewTitle">Review Title: </label><br>
+            <input type="text" id="reviewTitle"><br><br>
+            <label for="rating">Rating (1 to 10): </label><br>
+            <input type="number" id="rating" name="quantity" min="1" max="10"><br><br>
+            <label for="comment">Comment/Review: </label><br>
+            <textarea name="comment" rows="10" cols="30">
+Enter your comment here.
+            </textarea><br><br>
+            <label for="postedBy">Your username: </label><br>
+            <input type="text" id="postedBy"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <div><a href="index.html">Back to homepage</a></div>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport content="width=device-width, initial-scale="1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Noobz</title>
+</head>
+
+  <body>
+    <h2>Add an episode to our database</h2>
+        <form id="add-episode-form" onsubmit="function1()">
+            <label for="podcast">Podcast Name: </label><br>
+            <input type="text" required id="podcast" autofocus><br>
+
+            <label for="episodeName">Name of episode: </label><br>
+            <input type="text" required id="episodeName"><br>
+
+            <label for="episodeNr">Episode Nr: </label><br>
+            <input type="number" required id="episodeNr"><br><br>
+
+            <input type="submit"></input>
+        </form>
+    <div><a href="index.html">Back to homepage</a></div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../js/add_episodes.js"></script>
+  </body>
+</html>

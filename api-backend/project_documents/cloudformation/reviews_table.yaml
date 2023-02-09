@@ -1,0 +1,18 @@
+Resources:
+  ReviewsTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: "PodcastReviewService-Reviews"
+      AttributeDefinitions:
+        - AttributeName: "episodeId"
+          AttributeType: "S"
+        - AttributeName: "reviewId"
+          AttributeType: "S"
+      KeySchema:
+        - AttributeName: "episodeId"
+          KeyType: "HASH"
+        - AttributeName: "reviewId"
+          KeyType: "RANGE"
+      PointInTimeRecoverySpecification:
+        PointInTimeRecoveryEnabled: true
+      BillingMode: PAY_PER_REQUEST

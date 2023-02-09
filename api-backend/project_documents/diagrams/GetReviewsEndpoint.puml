@@ -1,0 +1,12 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+Client -> "Website Get Reviews Page": Submit get reviews form
+"Website Get Reviews Page" -> GetReviewsActivity :Get Reviews request
+GetReviewsActivity-> reviews: get reviews
+
+reviews -> GetReviewsActivity: Episode item
+GetReviewsActivity -> "Website Get Reviews Page" : List<Reviews>
+"Website Get Reviews Page" -> Client : list of reviews
+@enduml
