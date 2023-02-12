@@ -1,7 +1,7 @@
 # NoobzPodcastReviewService Design Document
 
 ## Podcast Review Service Design
-
+This document reflects the way the project was conceived, not it's current state.
 
 ## 1. Problem Statement
 
@@ -20,15 +20,15 @@ feedback on their episodes.
 
 ## 3. Use Cases
 
-U1. As a customer, I want to get ratings for podcast episodes when I look up a specific podcast.
+U1. As a user, I want to get ratings for podcast episodes when I look up a specific podcast.
 
-U2. As a customer, I want to look through the top-rated episodes for all podcast.
+U2. As a user, I want to look through the top-rated episodes for all podcast.
 
-U3. As a customer, I want to get the average rating for a given podcast.
+U3. As a user, I want to get the average rating for a given podcast.
 
-U4. As a customer, I want to review a podcast episode.
+U4. As a user, I want to review a podcast episode.
 
-U5. AS a customer, I want to see all reviews for a given episode.
+U5. AS a user, I want to see all reviews for a given episode.
 
 ## 4. Project Scope
 
@@ -109,13 +109,13 @@ String episodeId;
 ![](images/GetReviewsEndpoint.png)
 
 ## 6.3 GetTopRated Endpoint
-* Accepts a `GET` request to /episodes
+* Accepts a `GET` request to /episodes/toprated
 * Returns a List of EpisodeModel
 
 ![](images/GetTopRatedEndpoint.png)
 
 ## 6.5 AddEpisode Endpoint
-* Accepts a `POST` request
+* Accepts a `POST` request to the /episodes endpoint
 * Accepts an episode object, with  podcast, name, episodeNr
 
 # 7. Tables
@@ -132,8 +132,8 @@ translate that to a table structure, like with the *`Playlist` POJO* versus the
 podcast // partition key, string
 episodeNr // sort key, number
 name // string
-episodeId // string
 avgRating // number
+episodeId // string
 ```
 
 Will implement GSI with avgRating as partition key and episodeId as sort key

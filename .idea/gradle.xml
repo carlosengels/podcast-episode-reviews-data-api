@@ -5,14 +5,13 @@
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
         <option name="distributionType" value="DEFAULT_WRAPPED" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/api-backend" />
-        <option name="gradleHome" value="$PROJECT_DIR$/../../../../../Gradle/gradle-6.9.3" />
-        <option name="gradleJvm" value="16" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleHome" value="$PROJECT_DIR$/../../../../../../Gradle/gradle-6.9.3" />
         <option name="modules">
           <set>
-            <option value="$PROJECT_DIR$/api-backend" />
-            <option value="$PROJECT_DIR$/api-backend/LibrariesAndUtilities" />
-            <option value="$PROJECT_DIR$/api-backend/LibrariesAndUtilities/LibrariesandUtilities" />
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/LibrariesAndUtilities" />
+            <option value="$PROJECT_DIR$/LibrariesAndUtilities/LibrariesandUtilities" />
           </set>
         </option>
       </GradleProjectSettings>
